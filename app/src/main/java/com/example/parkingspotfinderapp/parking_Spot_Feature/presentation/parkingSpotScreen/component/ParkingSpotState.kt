@@ -7,12 +7,14 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MapStyleOptions
 import com.google.maps.android.compose.CameraPositionState
 import com.google.maps.android.compose.MapProperties
+import com.google.maps.android.compose.MapType
 import com.google.maps.android.compose.MapUiSettings
 
 data class ParkingSpotState(
 
     val mapProperties: MapProperties = MapProperties(
-        mapStyleOptions = MapStyleOptions(MapStyle.STYLE_JSON)
+//        mapStyleOptions = MapStyleOptions(MapStyle.STYLE_JSON)
+        mapType = MapType.SATELLITE
     ),
     val defaultCameraState: CameraPositionState = CameraPositionState(
         position = CameraPosition.fromLatLngZoom(
