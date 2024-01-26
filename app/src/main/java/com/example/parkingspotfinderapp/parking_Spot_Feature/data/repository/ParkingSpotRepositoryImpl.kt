@@ -22,9 +22,9 @@ class ParkingSpotRepositoryImpl(
 
     override fun getAllParkingSpot(): Flow<List<ParkingSpotModel>> {
         return dao.getAllParkingSpot().map { parkingSpot ->
-                parkingSpot.map {
-                    it.toParkingSpotModel()
-                }
+            parkingSpot.map {
+                it.toParkingSpotModel()
             }
+        }
     }
 }

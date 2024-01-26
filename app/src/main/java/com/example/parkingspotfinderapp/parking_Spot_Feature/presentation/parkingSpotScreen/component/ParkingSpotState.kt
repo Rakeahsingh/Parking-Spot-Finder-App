@@ -13,12 +13,12 @@ import com.google.maps.android.compose.MapUiSettings
 data class ParkingSpotState(
 
     val mapProperties: MapProperties = MapProperties(
-//        mapStyleOptions = MapStyleOptions(MapStyle.STYLE_JSON)
-        mapType = MapType.SATELLITE
+        mapStyleOptions = MapStyleOptions(MapStyle.STYLE_JSON),
+//        mapType = MapType.SATELLITE
     ),
     val defaultCameraState: CameraPositionState = CameraPositionState(
         position = CameraPosition.fromLatLngZoom(
-            LatLng(1.35, 103.87),
+            LatLng(19.0760, 72.8777),
             1f
         )
     ),
